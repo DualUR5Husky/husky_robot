@@ -54,7 +54,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     </node>
 
     <!-- TF Buffer Server -->
-    <node pkg="tf2_ros" type="buffer_server" name="tf2_buffer_server">
+    <node pkg="tf2_ros" type="buffer_server" name="left_tf2_buffer_server">
       <param name="buffer_size" value="120.0"/>
     </node>
 

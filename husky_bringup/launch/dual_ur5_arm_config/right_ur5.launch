@@ -33,7 +33,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <!-- Mostly taken from the ur_common.launch inside ur_common.launch -->
 
     <arg name="robot_ip" default="192.168.1.28"/>
-    <arg name="reverse_port" default="50002"/>
+    <arg name="reverse_port" default="50001"/>
     <arg name="min_payload" default="0.0"/>
     <arg name="max_payload" default="10.0"/>
     <arg name="prefix" default="r_ur5_arm_"/>
@@ -55,7 +55,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     </node>
 
     <!-- TF Buffer Server -->
-    <node pkg="tf2_ros" type="buffer_server" name="tf2_buffer_server">
+    <node pkg="tf2_ros" type="buffer_server" name="left_tf2_buffer_server">
       <param name="buffer_size" value="120.0"/>
     </node>
 
