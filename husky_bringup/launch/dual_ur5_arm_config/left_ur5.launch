@@ -27,7 +27,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 <launch>
  
    <!-- THIS IS FOR THE LEFT ARM ON THE DUAL UR5 HUSKY -->
-  <group ns="left_ur5">
+  <group ns="l_arm_controller">
     <!-- Launches the drivers and sets parameters for the ur5 arm -->
     <!-- Mostly taken from the ur_common.launch inside ur_common.launch -->
 
