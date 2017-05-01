@@ -28,13 +28,12 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
  
    <!-- THIS IS FOR THE RIGHT ARM ON THE DUAL UR5 HUSKY -->
 
- <arg name="dual_ur5_enabled" default="$(optenv HUSKY_DUAL_UR5_ENABLED false)" />
-  <group if="$(arg dual_ur5_enabled)">
+  <group name="right_ur5">
     <!-- Launches the drivers and sets parameters for the ur5 arm -->
     <!-- Mostly taken from the ur_common.launch inside ur_common.launch -->
 
-    <arg name="robot_ip" default="$(env HUSKY_RIGHT_UR5_IP)"/>
-    <arg name="reverse_port" default="50001"/>
+    <arg name="robot_ip" default="192.168.1.28"/>
+    <arg name="reverse_port" default="50002"/>
     <arg name="min_payload" default="0.0"/>
     <arg name="max_payload" default="10.0"/>
     <arg name="prefix" default="r_ur5_arm_"/>
@@ -62,5 +61,4 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
     <!-- Stow the arm
     <node pkg="husky_control" type="stow_ur5" name="stow_ur5"/> -->
-  </group>
 </launch>
