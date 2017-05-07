@@ -1,6 +1,7 @@
 <launch>
 
    <!-- RIGHT GRIPPER -->
-   <node name="right_robotiq_gripper" type="SModelTcpNode.py" pkg="robotiq_s_model_control" args="192.168.1.29"/>
-
+   <group ns="r_gripper">
+       <node name="right_robotiq_gripper" type="SModelTcpNode.py" pkg="robotiq_s_model_control" args="192.168.1.29"/>
+   </group>
 </launch>
